@@ -8,8 +8,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
     <link href="styling.css" rel="stylesheet">
+   
     <title>Online Notes App</title>
   </head>
   <body>
@@ -69,11 +70,11 @@
           </div>
           <div class="mb-3">
             <label for="password" class="col-form-label visually-hidden">choose a password:</label>
-              <input type="text" class="form-control" id="password" name="password" placeholder="Choose a password" maxlength="50">
+              <input type="password" class="form-control" id="password" name="password" placeholder="Choose a password" maxlength="50">
           </div>  
           <div class="mb-3">
             <label for="password2" class="col-form-label visually-hidden">confirm your password:</label>
-              <input type="text" class="form-control" id="password2" name="password2" placeholder="Confirm your password" maxlength="50">
+              <input type="password" class="form-control" id="password2" name="password2" placeholder="Confirm your password" maxlength="50">
           </div>   
             
         </div>
@@ -139,8 +140,8 @@
 
     <!--Forgott password form--> 
     <form method="post" id="forgotpasswordform">
-<div class="modal fade" id="forgotpasswordModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
+  <div class="modal fade" id="forgotpasswordModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h4 class="modal-title" id="myModalLabel">Forgot Password? Enter your email address</h4>
@@ -151,19 +152,21 @@
       <div id="forgotpasswordmessage"></div>
           <div class="mb-3">
             <label for="forgotpasswordemail" class="col-form-label visually-hidden">Email:</label>
-              <input type="text" class="form-control" name="forgotpasswordemail" id="login" placeholder="Email" maxlength="50">
+              <input type="text" class="form-control" name="forgotpasswordemail" id="forgotpasswordemail" placeholder="Email" maxlength="50">
           </div>
          
             
         
           <div class="float-start modal-footer">
-            <button type="register" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-target="signupModal" data-bs-toggle="modal">Register</button>
+            <button type="button" class="btn btn-secondary " data-bs-dismiss="modal" data-bs-target="signupModal" data-bs-toggle="modal">Register</button>
           </div>
-          <div class="float-end modal-footer">
-            <button type="submit" class="btn green" name="forgotpassword" value="submit">Submit</button>
+        
+          <div class= "float-end modal-footer">
+            <input type="submit" class="btn green" name="forgotpassword" value="submit">
          
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-          </div>
+            <button type="button" class="btn btn-secondary float left" data-bs-dismiss="modal">Cancel</button>
+        </div>
+      </div>
 
       </div>
   </div>
@@ -185,6 +188,8 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
